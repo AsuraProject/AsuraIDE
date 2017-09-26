@@ -1,0 +1,50 @@
+/* Copyright 2017 Yuri Faria
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */
+
+.CodeMirror {
+  color: white;
+  background: #191919;
+  height: 100%;
+  font-family: Consolas;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid white;
+  border-right: none;
+  width: 0;
+}
+
+.CodeMirror-gutters {
+  border-right: 0;
+  background-color: #191919;
+  white-space: nowrap;
+}
+
+.cm-s-default .cm-comment { color: #a8a8a8; }
+.cm-atom { color: #a16a94; }
+.cm-s-default .cm-number { color: white; }
+
+.cm-s-default .cm-property, .cm-s-default .cm-attribute { color: #85d61b; }
+.cm-s-default .cm-keyword { color: #51b8ba; }
+.cm-s-default .cm-string { color: #dbe84e; }
+
+.cm-s-default .cm-variable { color: white; }
+.cm-s-default .cm-variable-2 { color: white; }
+.cm-s-default .cm-def { color: white; }
+.cm-bracket { color: #d6d5d4; }
+.cm-tag { color: #db2d20; }
+.cm-link { color: #a16a94; }
+.cm-error { background: #db2d20; color: #807d7c; }
+
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar{ width: 0px; }

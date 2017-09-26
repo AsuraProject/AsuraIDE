@@ -1,0 +1,58 @@
+<!--
+Copyright 2017 Yuri Faria
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE html>
+<head>
+	<title>Asura Editor</title>
+	<link rel="stylesheet" type="text/css" href="../editor/editor.css">
+	<link rel="stylesheet" type="text/css" href="../lib/material-design-lite/material.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/code-mirror/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="../css/code-mirror-customized.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout">
+		<div class="menu">
+			<span class="menu-item" id="menu--save">Save</span>
+			<span class="menu-item" id="menu--save-as">Save As</span>
+			<span class="menu-item" id="menu--run">Run</span>
+		</div>
+
+		<main class="data-main">
+			<div class="screen-part style-col">
+				<div>
+					<div id="view-list"></div><br>
+					<div id="screen"></div><br>
+					<div id="tool-list">
+						<div class="tool-list--tool" id="pixel-pen">Pixel Pen</div>
+						<div class="tool-list--tool" id="write-pen">Write Pen</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="code-part style-col">
+				<textarea id="code-part--code"></textarea>
+			</div>
+		</main>
+	</div>
+
+	<script type="text/javascript" src="../editor/font.js"></script>
+	<script type="text/javascript" src="../editor/editor.js"></script>
+	<script type="text/javascript" src="../lib/material-design-lite/material.min.js"></script>
+	<script type="text/javascript" src="../lib/code-mirror/codemirror.js"></script>
+	<script type="text/javascript" src="../lib/code-mirror/mode/javascript.js"></script>
+</body>

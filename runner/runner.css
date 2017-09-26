@@ -1,0 +1,58 @@
+/* Copyright 2017 Yuri Faria
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */
+
+body{
+	margin: 0px;
+	overflow: none;
+}
+
+/* Screen */
+
+#screen{
+	display: table;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.screen-row{
+	display: table-row;
+}
+
+.screen-pixel{
+	display: table-cell;
+	background-color: black;
+	width: 7px;
+	height: 7px;
+}
+
+#position-on{
+	background-color: #363636;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* MDL */
+
+.mdl-button{
+	background-color: #262626;
+	color: white;
+}
+
+.mdl-button:active{
+	background-color: #222222;
+	-webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}

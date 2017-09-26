@@ -1,0 +1,21 @@
+{
+  "name": "Asura-IDE",
+  "version": "1.0.0",
+  "description": "A IDE for Asura Glass develop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/AsuraProject/AsuraIDE",
+  "keywords": [
+    "Asura",
+    "AsuraIDE",
+    "IDE",
+    "AsuraGlass"
+  ],
+  "author": "Windows87",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}

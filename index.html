@@ -1,0 +1,58 @@
+<!--
+Copyright 2017 Yuri Faria
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/material-design-lite/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mdl-customized.css">
+	<link rel="stylesheet" type="text/css" href="css/start.css">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout">
+		<main class="data-main">
+			<div class="mdl-typography--text-center">
+				<h4 id="start-project">Start a new Project</h4><br>
+				<h4 id="open-project">Open a Project</h4><br>
+				<h4 id="close-app">Close</div>
+			</div>
+		</main>
+
+		<div id="start--background">
+			<div id="start--menu" class="mdl-typography--text-center">
+				<div>
+					<div id="MessageErrorList"></div>
+
+					<div class="mdl-textfield mdl-js-textfield">
+	            		<input class="mdl-textfield__input" type="text" id="start--project-name">
+	            		<label class="mdl-textfield__label" for="start--project-name">Project Name</label>
+	          		</div><br>
+	          		<button id="start--file-create" class="mdl-button">Create File and Start Codding</button>
+          		</div>
+			</div>
+		<div>
+	</div>
+
+	<script>
+		var fs = require('fs');
+
+		var app = require('electron').remote; 
+		var dialog = app.dialog;
+	</script>
+	<script type="text/javascript" src="lib/material-design-lite/material.min.js"></script>
+	<script type="text/javascript" src="lib/my-libs/message-error.js"></script>
+	<script type="text/javascript" src="js/start.js"></script>
+</body>
