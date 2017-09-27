@@ -280,7 +280,7 @@ function View(){
 
 		for(pCounter = 0; pCounter < viewArray.length; pCounter++){
 			if(viewArray[pCounter].length == 4){
-				var x = parseInt(viewArray[pCounter].substring(1, 2));
+				var x = parseInt(viewArray[pCounter].substring(0, 2));
 				var y = parseInt(viewArray[pCounter].substring(2, 4));
 				document.getElementById(x.toString() + y.toString() + "#").style['background-color'] = '#87CEFA';
 				this.addPixel([x, y]);

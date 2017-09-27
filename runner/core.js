@@ -28,7 +28,7 @@ function Core(){
 			viewArray[pCounter] = viewArray[pCounter].replace('#', '');
 
 			if(viewArray[pCounter].length == 4){
-				var x = parseInt(viewArray[pCounter].substring(1, 2));
+				var x = parseInt(viewArray[pCounter].substring(0, 2));
 				var y = parseInt(viewArray[pCounter].substring(2, 4));
 				document.getElementById(x.toString() + y.toString() + "#").style['background-color'] = '#87CEFA';
 			}
