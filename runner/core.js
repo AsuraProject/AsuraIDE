@@ -1,17 +1,3 @@
-/* Copyright 2017 Yuri Faria
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License. */
-
 core = new Core;
 font = new Font;
 font = font.alphabet;
@@ -30,7 +16,18 @@ function Core(){
 			if(viewArray[pCounter].length == 4){
 				var x = parseInt(viewArray[pCounter].substring(0, 2));
 				var y = parseInt(viewArray[pCounter].substring(2, 4));
-				document.getElementById(x.toString() + y.toString() + "#").style['background-color'] = '#87CEFA';
+				var idX = x.toString();
+				var idY = y.toString();
+
+				if(idX.length == 1){
+					idX = "0" + idX.toString();
+				}
+
+				if(idY.length == 1){
+					idY = "0" + idY.toString();
+				}
+
+				document.getElementById(idX + idY + "#").style['background-color'] = '#87CEFA';
 			}
 
 			if(viewArray[pCounter].length > 4){
@@ -42,15 +39,24 @@ function Core(){
 					var maxXCounter = 0;
 
 					for(fsCounter = 0; fsCounter < font[string[cCounter]].length; fsCounter++){
-						var pixel = (x + font[string[cCounter]][fsCounter][0]).toString() + (y - font[string[cCounter]][fsCounter][1]).toString() + "#";
+						var idX = (x + font[string[cCounter]][fsCounter][0]).toString();
+						var idY = (y - font[string[cCounter]][fsCounter][1]).toString();
+
+						if(idX.length == 1){
+							idX = "0" + idX;
+						}
+
+						if(idY.length == 1){
+							idY = "0" + idY;
+						}
+
+						var pixel = idX + idY + "#";
 						if(maxXCounter < font[string[cCounter]][fsCounter][0]){
 							maxXCounter = font[string[cCounter]][fsCounter][0];
 						}
 						if(font[string[cCounter]] == ''){
 							maxXCounter = 3;
-						}
-						console.log(string);
-						console.log(pixel);						
+						}				
 						document.getElementById(pixel).style['background-color'] = "#87CEFA";
 					}
 					x = x + maxXCounter + 2;	

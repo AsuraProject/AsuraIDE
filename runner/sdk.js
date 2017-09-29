@@ -128,7 +128,7 @@ function View(){
 			yString = "0" + yString;
 		}
 
-		if((64 - x) > string.length){
+		if((64 - x) > (string.length * 4)){
 			result = "#" + xString + yString + string;
 			this.viewValue.push(result);
 		}else{
@@ -153,7 +153,6 @@ function View(){
 				nextSpace++;
 				start = nextSpace;
 				end = end - nextSpace;
-				console.log(end);
 
 				xString = "00";
 				x = 0;
