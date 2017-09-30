@@ -1,3 +1,5 @@
+/* Screen */
+
 #screen{
 	display: table;
 	background-color: white;
@@ -13,4 +15,28 @@
 	background-color: black;
 	width: 6px;
 	height: 6px;
+}
+
+/* Menu */
+
+#tool-background{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+}
+
+#tool-menu{
+	padding: 8px;
+	background-color: white;
+	z-index: 10;	
+}
+
+.mdl-textfield{
+	width: 25px;
 }
