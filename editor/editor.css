@@ -1,22 +1,3 @@
-/* Screen */
-
-#screen{
-	display: table;
-	background-color: white;
-	border: 1px solid black;
-}
-
-.screen-row{
-	display: table-row;
-}
-
-.screen-pixel{
-	display: table-cell;
-	background-color: black;
-	width: 6px;
-	height: 6px;
-}
-
 /* Menu */
 
 #tool-background{

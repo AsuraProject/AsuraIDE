@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
             var startWindow = remote.getCurrentWindow();
 
             editorWindow = new BrowserWindow({ width: 800, height: 600, icon: path.join(__dirname, 'assets/icon.png') });
-            editorWindow.setMenu(null);
+
             editorWindow.maximize();
             editorWindow.loadURL('file://' + __dirname + '/view/editor.html?file=' + fileName);
             
@@ -52,7 +52,7 @@ document.getElementById('start--file-create').addEventListener('click', function
 		messageError.setError('Write the Project Name');
 		return;
 	}
-	var content = saveAppName + " = new App('" + saveAppName + "', '" + appName + "');\n" + saveAppName + ".setApp(['#1616" + appName + "'], " + saveAppName + ");\n\n" + saveAppName + ".importNumber(0);\n\n" + saveAppName + ".app = function(){\n  mainView = new View;\n  mainView.setCustomArrayView(['#1216Hello World']);\n\n  this.onCreate = function(){\n    this.setView(mainView);\n  }\n\n    this.onCreate();\n}";
+	var content = saveAppName + " = new App('" + saveAppName + "', '" + appName + "');\n" + saveAppName + ".setApp(['#f4', #1616" + appName + "'], " + saveAppName + ");\n\n" + saveAppName + ".importNumber(0);\n\n" + saveAppName + ".app = function(){\n  mainView = new View;\n  mainView.setCustomArrayView(['#f4', '#1216Hello World']);\n\n  this.onCreate = function(){\n    this.setView(mainView);\n  }\n\n  this.onCreate();\n}";
 	var saveAppName = saveAppName + ".js";
 
 	dialog.showSaveDialog({title: "Create File", defaultPath: saveAppName}, (fileName) => {
