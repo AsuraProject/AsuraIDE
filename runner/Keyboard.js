@@ -13,14 +13,78 @@ See the License for the specific language governing permissions and
 limitations under the License. */
 
 function Keyboard(app){
+  this.app = app;
+  keyboardThis = this;
+
+  mainView = new View;
+  mainView.setCustomArrayView([]);
+
   lettersArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                   'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
                   'U', 'V', 'W', 'X', 'Y', 'Z',
                   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
                   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
                   'u', 'v', 'w', 'x', 'y', 'z',
-                  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];  
-  SpecificKeyboard(app, lettersArray);
+                  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  this.text = ''; 
+  atualLetter = 0;
+  
+   this.app.onTop = function(){
+    if(atualLetter == lettersArray.length){
+          keyboardThis.text = keyboardThis.text.substr(0, (keyboardThis.text.length - 1));
+          keyboardThis.setPositions();
+          return;
+     }
+     
+     keyboardThis.text = keyboardThis.text + lettersArray[atualLetter];
+     keyboardThis.setPositions();
+   }
+  
+   this.app.onLeft = function(){
+    if(!atualLetter){
+      atualLetter = lettersArray.length;
+      keyboardThis.setPositions();
+      return;
+    }
+    
+    atualLetter--;
+    keyboardThis.setPositions();
+  } 
+  
+  this.app.onRight = function(){
+    if(atualLetter == lettersArray.length){
+      atualLetter = 0;
+      keyboardThis.setPositions();
+      return;
+    }
+      
+    atualLetter++;
+    keyboardThis.setPositions();
+  }
+  
+  this.app.onDown = function(){
+    mainView.cleanView();
+    this.setView(mainView);
+    this.onTop = function(){}
+    this.onDown = function(){}
+    this.onLeft = function(){}
+    this.onRight = function(){}
+    keyboardThis.onText();
+  }
+  
+  this.setPositions = function(){
+    mainView.cleanView();
+    mainView.setFont('4');
+    mainView.setString(1, 4, this.text.toString());
+    mainView.setFont('12');
+    if(atualLetter != lettersArray.length) mainView.setString(29, 20, lettersArray[atualLetter]);
+    this.app.setView(mainView);
+  }
+  
+  this.onText = function(){
+  }
+
+  this.setPositions();
 }
 
 function NumericKeyboard(app){
@@ -28,7 +92,7 @@ function NumericKeyboard(app){
   keyboardThis = this;
 
   mainView = new View;
-  mainView.setCustomArrayView(["#f12"]);
+  mainView.setCustomArrayView([]);
 
   this.text = '';
   atualNumber = 0;
@@ -78,8 +142,10 @@ function NumericKeyboard(app){
   
   this.setPositions = function(){
     mainView.cleanView();
-    mainView.setString(12, 4, this.text.toString());
-    if(atualNumber != 10) mainView.setString(29, 17, atualNumber.toString());
+    mainView.setFont('4');
+    mainView.setString(1, 4, this.text.toString());
+    mainView.setFont('12');
+    if(atualNumber != 10) mainView.setString(29, 20, atualNumber.toString());
     this.app.setView(mainView);
   }
   
@@ -94,7 +160,7 @@ function SpecificKeyboard(app, lettersArray){
   keyboardThis = this;
 
   mainView = new View;
-  mainView.setCustomArrayView(["#f12"]);
+  mainView.setCustomArrayView([]);
 
   this.text = '';
   atualLetter = 0;
@@ -144,8 +210,10 @@ function SpecificKeyboard(app, lettersArray){
   
   this.setPositions = function(){
     mainView.cleanView();
-    mainView.setString(12, 4, this.text.toString());
-    if(atualLetter != lettersArray.length) mainView.setString(29, 17, lettersArray[atualLetter]);
+    mainView.setFont('4');
+    mainView.setString(1, 4, this.text.toString());
+    mainView.setFont('12');
+    if(atualLetter != lettersArray.length) mainView.setString(29, 20, lettersArray[atualLetter]);
     this.app.setView(mainView);
   }
   

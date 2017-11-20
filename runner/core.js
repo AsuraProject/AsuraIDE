@@ -65,8 +65,9 @@ function Core(){
 								document.getElementById(pixel).style['background-color'] = "#87CEFA";
 							}
 						}
-					}
-					x = x + maxXCounter + 2;	
+
+						x = x + maxXCounter + 2;
+					}	
 				}
 			}
 

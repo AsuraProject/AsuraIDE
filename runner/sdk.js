@@ -48,7 +48,7 @@ function App(applicationName, runningName){
 	/* System */
 
 	this.startApp = function(startedApp){
-		core.setApplication(startedApp.applicationName, startedApp.runningName);
+		core.setApplication(startedApp);
 		startedApp.app();
 	}
 
