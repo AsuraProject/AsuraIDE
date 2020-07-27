@@ -1,10 +1,10 @@
 # ASURA IDE
 
-Esse projeto já está arquivado (muito tempo) e não foi finalizado, porém, ele não é mantido no Github (e estou documentando) por questão de nostalgia =)
+Esse projeto já está arquivado (2017) e não foi finalizado, porém, ele é mantido no Github (e estou criando um README) por questão de nostalgia =)
 
-O objetivo desse programa, desenvolvido no Electron, era criar um Editor que permitisse criar programas .js para o Asura Glass (um projeto antigo meu, que não fosse para frente, que tivesse o objetivo de ser um smartglass que poderia permitir o download de aplicativos programados em .JS).
+O objetivo desse programa, desenvolvido no Electron, era criar um Editor que permitisse criar programas .js para o Asura Glass (um projeto antigo meu, que não fosse para frente, que tinha o objetivo de ser um smartglass que poderia permitir o download de aplicativos programados em .JS).
 
-Esse "IDE" traz uma biblioteca com funcionalidade como exibições, teclados, fontes diferentes, etc. Como esse projeto já está arquivado e não tem utilidade, não é aplicável a registros, mas você pode ver exemplos de códigos usando essa biblioteca no último tópico do README.
+Esse "IDE" traz uma biblioteca com funcionalidade como Views, Keyboards, fontes diferentes, etc. Como esse projeto já está arquivado e não tem utilidade, não apresenta documentação, mas você pode ver exemplos de códigos usando essa biblioteca no último tópico do README.
 
 <a href="https://github.com/AsuraProject/asuraproject.github.com">Asura</a> - Sobre o Asura Glass
 <a href="https://github.com/AsuraProject/AsuraApp">AsuraApp</a> - Aplicativo em Java do Asura Glass

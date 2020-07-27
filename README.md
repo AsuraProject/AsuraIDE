@@ -2,11 +2,11 @@
 
 <a href="https://github.com/AsuraProject/AsuraIDE/blob/master/README-ptbr.md">Portuguese README</a>
 
-This project has been archived (a long time) and has not been finalized, however, it is not kept on Github (and I am documenting it) because of nostalgia =)
+This project has been archived (2017) and has not been finalized, however, it is kept on Github (and I am creating a README) because of nostalgia =)
 
 The purpose of this program, developed at Electron, was to create an Editor that would allow creating .js programs for Asura Glass (an old project of mine, that was not forward, that had the objective of being a smartglass that could allow the download of applications programmed in .JS).
 
-This "IDE" includes a library with functionality such as displays, keyboards, different fonts. Since this project is already archived and useless, it is not applicable to records, but you can see code examples using this library in the last topic of the README.
+This "IDE" includes a library with functionality such as Views, Keyboards, different fonts. Since this project is already archived and useless, it is not applicable to records, but you can see code examples using this library in the last topic of the README.
 
 <a href="https://github.com/AsuraProject/asuraproject.github.com">Asura</a> - About Asura Glass
 <a href="https://github.com/AsuraProject/AsuraApp">AsuraApp</a> - Java App Asura Glass
