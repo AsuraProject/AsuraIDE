@@ -22,7 +22,7 @@ This "IDE" includes a library with functionality such as Views, Keyboards, diffe
 <img src="https://raw.githubusercontent.com/AsuraProject/AsuraIDE/master/screenshots/desktop-3.png" width="100%">
 <img src="https://raw.githubusercontent.com/AsuraProject/AsuraIDE/master/screenshots/desktop-4.png" width="100%">
 
-## Como Iniciar
+## How install
 ```bash
 # Clone
 git clone https://github.com/AsuraProject/AsuraIDE
