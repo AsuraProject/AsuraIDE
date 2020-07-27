@@ -7,8 +7,11 @@ O objetivo desse programa, desenvolvido no Electron, era criar um Editor que per
 Esse "IDE" traz uma biblioteca com funcionalidade como Views, Keyboards, fontes diferentes, etc. Como esse projeto já está arquivado e não tem utilidade, não apresenta documentação, mas você pode ver exemplos de códigos usando essa biblioteca no último tópico do README.
 
 <a href="https://github.com/AsuraProject/asuraproject.github.com">Asura</a> - Sobre o Asura Glass
+
 <a href="https://github.com/AsuraProject/AsuraApp">AsuraApp</a> - Aplicativo em Java do Asura Glass
+
 <a href="https://github.com/AsuraProject/WebService">WebService</a> - Web Service PHP/JS do Asura Glass
+
 <a href="https://github.com/AsuraProject/AsuraArduinoCode">AsuraArduinoCode</a> - Código Arduino do Asura Glass
 
 **Obs:** Está em Javascript antigo, mas esse foi um dos meus primeiros códigos JS/Electron.
