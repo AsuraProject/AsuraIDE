@@ -9,8 +9,11 @@ The purpose of this program, developed at Electron, was to create an Editor that
 This "IDE" includes a library with functionality such as Views, Keyboards, different fonts. Since this project is already archived and useless, it is not applicable to records, but you can see code examples using this library in the last topic of the README.
 
 <a href="https://github.com/AsuraProject/asuraproject.github.com">Asura</a> - About Asura Glass
+
 <a href="https://github.com/AsuraProject/AsuraApp">AsuraApp</a> - Java App Asura Glass
+
 <a href="https://github.com/AsuraProject/WebService">WebService</a> - Web Service PHP/JS Asura Glass
+
 <a href="https://github.com/AsuraProject/AsuraArduinoCode">AsuraArduinoCode</a> - Arduino Code Asura
 
 **Obs:** It's in old Javascript, but that was one of my first JS/ Electron codes.
