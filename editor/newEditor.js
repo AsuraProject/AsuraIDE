@@ -53,8 +53,8 @@ document.getElementById('menu--run').addEventListener('click', function(){
 	});        
 
     runnerWindow = new BrowserWindow({ width: 465, height: 317, icon: path.join(__dirname, '/../assets/icon.png') });
-    runnerWindow.setMenu(null);
-    runnerWindow.setResizable(false);
+    //runnerWindow.setMenu(null);
+    //runnerWindow.setResizable(false);
     runnerWindow.setMinimizable(false);
     runnerWindow.setMaximizable(false);
     runnerWindow.loadURL('file://' + __dirname + '/../runner/runner.html?file=' + file);	

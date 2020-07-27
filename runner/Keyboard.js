@@ -212,7 +212,7 @@ function SpecificKeyboard(app, lettersArray){
     mainView.cleanView();
     mainView.setFont('4');
     mainView.setString(1, 4, this.text.toString());
-    mainView.setFont('12');
+    mainView.setFont('11');
     if(atualLetter != lettersArray.length) mainView.setString(29, 20, lettersArray[atualLetter]);
     this.app.setView(mainView);
   }
